@@ -1,0 +1,94 @@
+#productPriceTable,.productPrice{
+    display: none;
+  }
+  h1{
+    font-weight: 700;
+    font-size: x-large;
+    text-align: center;
+    margin: 20px 0;
+  }
+  h2{
+    font-weight: 700;
+  }
+  table{
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .empty-cart{
+    text-align: center;
+  }
+  thead tr,tbody tr{
+    display: grid;
+    grid-template-columns: 44% 27% 27%;
+    gap:5px;
+  }
+  thead{
+    font-weight: 700;
+  }
+  tr{
+    margin-bottom: 20px;
+  }
+  th{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .productImgName img{
+    border-radius: 5px;
+    width: 50px;
+  }
+  .productQuantity{
+    gap: 5px
+  }
+  .productQuantity p{
+    width: 8%;
+  }
+  #more,#less{
+    background-color: var(--color-scheme);
+    color:#fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #less:disabled,
+  #less[disabled],
+  #more:disabled,
+  #more[disabled]{
+    background-color: #555;
+    cursor:unset;
+  }
+  #more:active{
+    background-color: navy;
+  }
+  #less:active{
+    background-color: red;
+  }
+  #totalPrice{
+    width: 100%;
+    float: right;
+  }
+  #totalPrice .container div{
+    display: flex;
+    justify-content: space-around;
+  }
+  .total-price{
+    font-weight: 700;
+  }
+  @media (min-width:732px) {
+    h1{
+      margin: 70px 0;
+    }
+    #productPriceTable,.productPrice{
+      display: flex;
+    }
+    thead tr,tbody tr{
+      display: grid;
+      grid-template-columns: 40% repeat(3,20%);
+      gap:2%;
+    }
+    #totalPrice{
+      width: 50%;
+    }
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to our Online Store" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Online Store</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <ul>
+          <li>Home</li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <a href="cart.html">
+          <img src="images/carts.svg" alt="carts">
+          <span></span>
+        </a>
+      </div>
+    </nav>
+    <div class="slider-container">
+      <img class="active" src="https://www.bestinedmonton.com/wp-content/uploads/2020/10/Best-Computer-Stores-in-Edmonton.jpg" alt="" width="600px" height="350px"/>
+      <img src="https://i.ytimg.com/vi/zGPFHFiSSmA/maxresdefault.jpg" width="600px" height="350px" alt="" />
+      <img src="https://media.product.which.co.uk/prod/images/original/gm-17d7dcc5-ec72-4b88-bc99-ded41c453200-apple-m1.jpeg" alt=""  width="600px" height="350px"/>
+    </div>
+    <div class="slider-controls container">
+      <span class="perv" id="perv" onclick="perv()"><i class="fa-solid fa-angles-left"></i> Pervious </span>
+      <span class="next" id="next" onclick="next()">Next <i class="fa-solid fa-angles-right"></i></span>
+    </div>
+    <br /><br />
+    <div class="filter container">
+      <ul class="tabs">
+        <li  class="active" data-cont=".card">All</li>
+        <li data-cont=".laptops">Laptops</li>
+        <li data-cont=".printers">Printers</li>
+        <li data-cont=".mobilephone">Phones</li>
+      </ul>
+      <div class="filtercontent" id="filtercontent" style="display:flex; justify-content: space-between; flex-wrap: wrap;">
+
+      </div>
+    </div>
+    <section id = products>
+      <div class="container">
+      </div>
+    </section>
+
+
+    <div id="footer" >
+      <div class="footerContainer">
+
+          <div class="footer">Contact With Us On Socia Media </div>
+          <div class="footer footerIcon"><i id="facebook" class="fa-brands fa-facebook-f"></i></div>
+          <div class="footer footerIcon"><i id="instagram" class="fab fa-instagram"></i></div>
+      </div>
+      <div class="footerContainer">
+
+          <div class="footer">Download OStore app </div>
+          <div class="footer footerIcon"><i id="googlePlay" class="fa-brands fa-google-play"></i></div>
+          <div class="footer footerIcon"><i id="appSrore" class="fa-brands fa-app-store-ios"></i></div>
+      </div>
+  </div>
+    <script src="js/home.js"></script>
+    <script src="js/addToCart.js"></script>
+  </body>
+</html>
